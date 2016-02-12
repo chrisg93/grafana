@@ -38,6 +38,10 @@ var panelDefaults = {
     full: false,
     lineColor: 'rgb(31, 120, 193)',
     fillColor: 'rgba(31, 118, 189, 0.18)',
+  },
+  panelContent: {
+    padding: "20px",
+    lineHeight: "20px"
   }
 };
 
@@ -381,6 +385,14 @@ class SingleStatCtrl extends MetricsPanelCtrl {
       }
 
       elem.html(body);
+
+      if (panel.panelContent.padding) {
+        elem.find(".singlestat-panel-value-container").css("padding", panel.panelContent.padding);
+      }
+
+      if (panel.panelContent.lineHeight) {
+        elem.find(".singlestat-panel-value-container").css("line-height", panel.panelContent.lineHeight);
+      }
 
       if (panel.sparkline.show) {
         addSparkline();
