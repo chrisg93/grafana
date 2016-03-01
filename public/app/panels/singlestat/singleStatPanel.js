@@ -165,6 +165,14 @@ function (angular, app, _, $) {
 
           elem.html(body);
 
+          if (panel.panelContent.padding) {
+            elem.find(".singlestat-panel-value-container").css("padding", panel.panelContent.padding);
+          }
+
+          if (panel.panelContent.lineHeight) {
+            elem.find(".singlestat-panel-value-container").css("line-height", panel.panelContent.lineHeight);
+          }
+
           if (panel.sparkline.show) {
             addSparkline();
           }

@@ -63,6 +63,10 @@ function (angular, app, _, kbn, TimeSeries, PanelMeta) {
         full: false,
         lineColor: 'rgb(31, 120, 193)',
         fillColor: 'rgba(31, 118, 189, 0.18)',
+      },
+      panelContent: {
+        padding: "20px",
+        lineHeight: "20px"
       }
     };
 

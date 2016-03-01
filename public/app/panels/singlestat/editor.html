@@ -74,6 +74,28 @@
 			</ul>
 			<div class="clearfix"></div>
 		</div>
+		<div class="tight-form">
+			<ul class="tight-form-list">
+				<li class="tight-form-item">
+					<strong>Panel content</strong>
+				</li>
+				<li class="tight-form-item">
+					Padding
+				</li>
+				<li>
+					<input type="text" class="input-small tight-form-input"
+					ng-model="panel.panelContent.padding" ng-change="render()" ng-model-onblur>
+				</li>
+				<li class="tight-form-item">
+					Line height
+				</li>
+				<li>
+					<input type="text" class="input-small tight-form-input"
+					ng-model="panel.panelContent.lineHeight" ng-change="render()" ng-model-onblur>
+				</li>
+			</ul>
+			<div class="clearfix"></div>
+		</div>
 	</div>
 </div>
 
